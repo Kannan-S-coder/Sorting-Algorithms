@@ -19,24 +19,47 @@ To write a program to perform selection sort and insertion sort using python pro
 5.	Repeat the steps 2 to 4 for sorting all the elements in the array.
 ## Program:
 i)	#Selection Sort
+```python
+#Developed By: Kannan.S
+#Register No : 212223230098
+
+Unsorted=eval(input())
+def selsort(Unsorted):
+  n = len(Unsorted)
+  for i in range(n-1):
+    min_pos = i
+    for j in range(i,n):
+      if Unsorted[j]<Unsorted[min_pos]:
+        Unsorted[j],Unsorted[min_pos] = Unsorted[min_pos],Unsorted[j]
+  return Unsorted
+print(selsort(Unsorted))
 ```
 
-
-
-
-
-```
 ii)	#Insertion Sort
-```
+```python
+#Developed By: Kannan.S
+#Register No : 212223230098
 
-
-
-
-
-
+def Insertionsort(arr):
+  for i in range(1,len(arr)):
+    j = i
+    while arr[j]<arr[j-1] and j>0:
+      arr[j],arr[j-1] = arr[j-1], arr[j]
+      j-=1
+  return arr
+arr = eval(input())
+print(Insertionsort(arr))
 ```
 
 ## Output:
+i) #Selection Sort
+
+![unit 3 exp 8(i)](https://github.com/Kannan-S-coder/Sorting-Algorithms/assets/147120710/ec182f3c-7463-40bf-a7d9-c95c37cbbd6f)
+
+
+ii) #Insertion Sort
+
+![unit 3 exp 8 (ii)](https://github.com/Kannan-S-coder/Sorting-Algorithms/assets/147120710/30ebe350-47a5-4b93-950f-49686fd7ab07)
 
 
 ## Result:
